@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import BannerPng from "./public/assets/banner-bg.jpg"
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,6 +12,24 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors:{
+        primary: "#de2c4d",
+        secondary:"#fb923c"
+      },
+      fontFamily:{
+        poppins: ["poppins","san-serif"],
+        averia:["Averia Serif Libre"],
+      },
+      container:{
+        center: true,
+        padding:{
+          DEFAULT: "1rem",
+          sm:"2rem",
+          lg:"4rem",
+          xl:"5rem",
+          "2xl":"6rem"
+        }
       },
     },
   },
